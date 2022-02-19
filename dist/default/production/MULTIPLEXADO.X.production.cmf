@@ -1,0 +1,319 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/main_multiplexado.o
+resVect CODE 0 0 0 3 2 1
+code CODE 0 0 0 214 2 1
+intVect CODE 0 0 0 10 2 1
+udata_bank0 BANK0 1 20 20 7 1 1
+udata_shr COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 27-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 27-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 214-1FFF 2
+ENTRY 214-1FFF 2
+IDLOC 2000-2003 2
+CODE 214-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 214-1FFF 2
+STRING 214-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/main_multiplexado.o
+0 intVect CODE >60:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+4 intVect CODE >63:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+5 intVect CODE >64:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+6 intVect CODE >65:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+7 intVect CODE >68:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+8 intVect CODE >69:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+9 intVect CODE >72:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+A intVect CODE >73:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+B intVect CODE >78:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+C intVect CODE >79:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+D intVect CODE >80:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+E intVect CODE >81:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+F intVect CODE >82:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+0 resVect CODE >53:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+0 resVect CODE >56:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+2 resVect CODE >57:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+0 code CODE >86:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+100 code CODE >89:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+101 code CODE >90:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+102 code CODE >91:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+103 code CODE >92:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+104 code CODE >93:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+106 code CODE >97:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+107 code CODE >98:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+108 code CODE >99:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+109 code CODE >100:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+10A code CODE >101:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+10B code CODE >105:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+10D code CODE >106:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+10E code CODE >107:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+10F code CODE >108:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+110 code CODE >109:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+111 code CODE >110:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+112 code CODE >114:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+114 code CODE >115:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+115 code CODE >116:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+116 code CODE >117:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+117 code CODE >118:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+118 code CODE >119:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+119 code CODE >121:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+11B code CODE >122:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+11C code CODE >123:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+11D code CODE >124:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+11E code CODE >125:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+11F code CODE >130:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+121 code CODE >131:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+122 code CODE >132:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+123 code CODE >133:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+124 code CODE >134:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+125 code CODE >137:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+127 code CODE >138:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+128 code CODE >139:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+129 code CODE >140:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+12B code CODE >141:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+12C code CODE >142:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+12D code CODE >143:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+12E code CODE >144:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+12F code CODE >145:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+130 code CODE >146:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+131 code CODE >147:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+132 code CODE >148:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+133 code CODE >149:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+135 code CODE >150:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+136 code CODE >151:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+137 code CODE >152:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+138 code CODE >153:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+139 code CODE >154:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+13A code CODE >155:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+13B code CODE >156:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+13C code CODE >159:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+13E code CODE >160:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+13F code CODE >161:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+140 code CODE >163:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+142 code CODE >164:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+143 code CODE >165:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+144 code CODE >166:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+145 code CODE >167:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+146 code CODE >168:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+147 code CODE >169:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+148 code CODE >172:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+149 code CODE >173:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+14A code CODE >174:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+14B code CODE >176:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+14C code CODE >177:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+14D code CODE >178:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+14E code CODE >179:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+14F code CODE >180:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+150 code CODE >183:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+151 code CODE >184:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+152 code CODE >185:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+153 code CODE >187:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+154 code CODE >188:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+155 code CODE >189:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+156 code CODE >191:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+157 code CODE >194:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+158 code CODE >195:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+159 code CODE >196:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+15A code CODE >197:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+15B code CODE >201:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+15C code CODE >202:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+15D code CODE >203:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+15E code CODE >204:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+15F code CODE >205:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+160 code CODE >208:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+161 code CODE >209:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+162 code CODE >210:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+163 code CODE >211:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+164 code CODE >212:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+165 code CODE >215:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+166 code CODE >216:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+167 code CODE >217:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+168 code CODE >218:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+169 code CODE >219:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+16A code CODE >220:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+16B code CODE >221:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+16C code CODE >223:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+16D code CODE >224:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+16E code CODE >225:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+16F code CODE >226:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+170 code CODE >227:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+171 code CODE >228:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+172 code CODE >229:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+173 code CODE >230:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+174 code CODE >231:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+175 code CODE >232:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+176 code CODE >235:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+177 code CODE >236:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+178 code CODE >237:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+179 code CODE >238:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+17A code CODE >239:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+17B code CODE >240:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+17C code CODE >241:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+17D code CODE >242:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+17E code CODE >245:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+17F code CODE >246:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+180 code CODE >247:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+181 code CODE >248:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+182 code CODE >249:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+183 code CODE >250:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+184 code CODE >251:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+185 code CODE >252:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+186 code CODE >255:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+187 code CODE >256:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+188 code CODE >257:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+189 code CODE >258:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+18A code CODE >259:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+18B code CODE >260:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+18C code CODE >261:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+18D code CODE >262:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+18E code CODE >265:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+18F code CODE >266:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+190 code CODE >267:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+191 code CODE >268:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+192 code CODE >269:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+193 code CODE >270:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+194 code CODE >273:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+195 code CODE >274:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+196 code CODE >275:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+197 code CODE >276:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+198 code CODE >277:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+199 code CODE >278:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+19A code CODE >281:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+200 code CODE >283:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+201 code CODE >284:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+202 code CODE >285:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+203 code CODE >286:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+204 code CODE >287:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+205 code CODE >288:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+206 code CODE >289:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+207 code CODE >290:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+208 code CODE >291:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+209 code CODE >292:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+20A code CODE >293:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+20B code CODE >294:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+20C code CODE >295:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+20D code CODE >296:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+20E code CODE >297:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+20F code CODE >298:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+210 code CODE >299:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+211 code CODE >300:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+212 code CODE >301:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+213 code CODE >302:C:\Users\Dell\Documents\UVG\3 Año\5 Semestre\Programación de Microcontroladores\Ejemplos clase PROYECTOS\MULTIPLEXADO.X\main_multiplexado.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 214 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 ABS 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 0 0 ABS 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 7 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
